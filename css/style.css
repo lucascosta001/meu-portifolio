@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #232633;
+    --cor1: #bfc0c0;
+    --cor2: #777996;
+    --cor3: #157A6E;
+
+    --fonte-padrao: Arial, helvetica, sans-serif;
+    --fonte-destaque: ;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    /* overflow: hidden; */
+}
+
+
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor0));
+    height: 12vh;
+}
+
+h1{
+    text-align: center;
+
+}
+
+nav{
+    text-align: center;
+    color: white;
+}
+
+a{
+    margin: 1vh;
+    margin-top: 1vh;
+}
+
+section{
+    background-color: var(--cor2);
+    height: 100vh;
+}
+
+#conteiner{
+    /* text-align: center; */
+    margin: 0px;
+    padding: 0px;
+    position: static;
+}
+
+.sobre{
+    position: absolute;
+    height: 70px;
+    width: 50%;
+    background-color: white;
+}
+
+.cursos{
+    
+    position: absolute;
+    
+    left: 50px;
+    bottom: 50px;
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+
+}
+
+.foto{
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    width: 50%;
+    height: 50%;
+    background-color: pink;
+}
