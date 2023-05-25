@@ -49,7 +49,7 @@ section{
     /* text-align: center; */
     margin: 0px;
     padding: 0px;
-    position: static;
+    position: relative;
 }
 
 .sobre{
@@ -61,7 +61,7 @@ section{
 
 .cursos{
     
-    position: absolute;
+    position: absolut;
     
     left: 50px;
     bottom: 50px;
