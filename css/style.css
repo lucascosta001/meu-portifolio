@@ -1,3 +1,5 @@
+@import url(navmobile.css);
+ /* width > 820 */
 /* Configurações basicas */
 
 :root{
@@ -5,6 +7,14 @@
     --cor1: #bfc0c0;
     --cor2: #777996;
     --cor3: #157A6E;
+
+    --cor1teste: #040F0E;
+    --cor2teste: #1D3331;
+    --cor3teste: #345C58;
+    --cor4teste: #195C55;
+    --cor5teste: #2EA99D;
+
+
 
     --fonte-padrao: Arial, helvetica, sans-serif;
     --fonte-destaque: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -31,7 +41,8 @@ h1.titulo {
     width: 100%;
     position: fixed;
     top: 0;
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1), var(--cor2), var(--cor1)); 
+    /* background-color: var(--cor1); */
+    background-color: var(--cor2teste);
 }
 
 h1.nome{
@@ -53,8 +64,8 @@ nav{
     top: 6vh;
     left: 0;
     width: 100%;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor2), var(--cor1));
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.429);
+    background-color: var(--cor2teste);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.287);
 }
 
 .nav-list {
@@ -66,77 +77,10 @@ nav{
     letter-spacing: 3px;
 }
 
-/* Menu Para Celulares */
-.mobile-menu{
-    display: none;
-    cursor: pointer;
-}
-
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background-color: black;
-    margin: 8px;
-    transition: 0.3s;
-}
-
-@media (max-width: 999px) {
-    body {
-        overflow-x: hidden;
-    }
-    .nav-list {
-        position: absolute;
-        top: 6vh;
-        right: 0;
-        width: 30vw;
-        height: 46vh;
-        background-color: var(--cor0);
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-        margin-left: 0;
-        opacity: 0;
-    }
-    .mobile-menu {
-        display: block;
-    }
-}
-
-.nav-list.active {
-    transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    } 
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .line2 {
-    opacity: 0;
-}
-
-.mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-}
-
 /* Barra de navegação Fixa */
 
 .principal {
-    padding: 0 16px;
+    padding: 0 30px;
 }
 
 .FixoNoTopo{
@@ -168,21 +112,23 @@ a:hover{
 
 main{
     height: 100%;
-    background-color: var(--cor0);
+    background-color: var(--cor5teste);
 }
 
 #conteiner{
     margin: 0px;
     padding: 0px;
+    position: relative;
 }
 
 /* foto */
 
 .fundoFoto {
-    position: static;
-    width: 450px;
-    height: 450px;
-    margin: auto;
+    position: absolute;
+    top: 50px;
+    left: 7vw;
+    width: 36vw;
+    height: 36vw;
     background-color: var(--cor2);
     border-radius: 0 0 6px 6px;
     box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.404);
@@ -190,29 +136,33 @@ main{
 }
 
 .foto {
-    margin: 25px;
-    width: 400px;
-    height: 400px;
+    position: absolute;
+    margin: 1.3vw;
+    width: 33vw;
+    height: 33vw;
     background-color: white;
     border-radius: 50%;
     display: inline-block;
 }
 
 .minhaFoto {
+    position: absolute;
     background-position: center center;
-    width: 400px;
-    height: 400px;
+    width: 33vw;
+    height: 33vw;
     border-radius: 50%;
 }
 
 /* Conteúdo */
 
 .sobre{
-    position: static;
-    width: 400px;
-    height: 255px;
+    position: absolute;
+    top: 90px;
+    left: 45vw;
+    right: 50px;
+    min-width: 30vw;
+    min-height: 255px;
     background-color: var(--cor1);
-    margin: 20px;
     border-radius: 6px;
     box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.404);
     display: inline-block;
@@ -229,7 +179,6 @@ main{
 p {
     text-indent: 15px;
     text-align: justify;
-    align-items: ;
     color: black;
     font-weight: 600;
     font-family: var(--fonte-padrao);
@@ -239,7 +188,13 @@ p {
 /* Rodapé */
 
 footer{
+    display: block;
     background-color: var(--cor2);
     padding: 8px;
+    margin: auto;
+    
+}
+
+.footer{
     text-align: center;
 }
