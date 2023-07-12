@@ -1,4 +1,4 @@
-@import url(navmobile.css);
+/* @import url(navmobile.css); */
  /* width > 820 */
 /* Configurações basicas */
 
@@ -28,151 +28,87 @@
 }
 
 body {
-    height: 1000px;
-    padding-top: 12vh;
+    height: 1000px; /**/
+    padding-top: 10vh;
 }
 
-h1.titulo {
-    text-align: center;
-    font-size: 2.3vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: underline;
-    height: 6vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    /* background-color: var(--cor1); */
-    background-color: var(--cor2teste);
-}
+/* header */
 
-h1.nome{
+h1{
     text-align: center;
     font-size: 2vw;
     text-transform: uppercase;
     letter-spacing: 4px;
+    color: var(--cor5teste);
+    font-family: var(--fonte-destaque);
 }
 
-/* Menu */
-
 nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: var(--fonte-destaque);
-    height: 6vh;
+    z-index: 1;
     position: fixed;
-    top: 6vh;
+    top: 0;
     left: 0;
+    height: 10vh;
     width: 100%;
     background-color: var(--cor2teste);
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.287);
 }
 
-.nav-list {
-    list-style: none;
-    display: flex;
-}
-
-.nav-list li {
-    letter-spacing: 3px;
-}
-
-/* Barra de navegação Fixa */
-
-.principal {
-    padding: 0 30px;
-}
-
-.FixoNoTopo{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.FixoNoTopo + .principal {
-    padding-top: 60px;
-}
-
-/* Links de navegação */
-
-a{
-    margin: 1vh;
-    margin-top: 1vh;
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-a:hover{ 
-    color: white;
-    opacity: 0.7;
-}
+/* @media screen and (max-width: 800px){
+       
+} */
 
 /* Conteúdo */
 
-main{
+#sobremim{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
     height: 100%;
     background-color: var(--cor5teste);
-}
-
-#conteiner{
-    margin: 0px;
-    padding: 0px;
-    position: relative;
 }
 
 /* foto */
 
 .fundoFoto {
-    position: absolute;
-    top: 50px;
-    left: 7vw;
-    width: 36vw;
-    height: 36vw;
+    width: 400px;
+    height: 400px;
     background-color: var(--cor2);
     border-radius: 0 0 6px 6px;
     box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.404);
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .foto {
-    position: absolute;
-    margin: 1.3vw;
-    width: 33vw;
-    height: 33vw;
+    margin: auto;
+    width: 350px;
+    height: 350px;
     background-color: white;
     border-radius: 50%;
-    display: inline-block;
 }
 
 .minhaFoto {
-    position: absolute;
-    background-position: center center;
-    width: 33vw;
-    height: 33vw;
+    margin: auto;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 800px){
+
+    
 }
 
 /* Conteúdo */
 
 .sobre{
-    position: absolute;
-    top: 90px;
-    left: 45vw;
-    right: 50px;
     min-width: 30vw;
-    min-height: 255px;
+    height: 350px;
+    width: 400px;
     background-color: var(--cor1);
     border-radius: 6px;
     box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.404);
-    display: inline-block;
-}
-
-.cursos{
-    background-color: blue;
-}
-
-.quemsou {
     padding: 10px;
 }
 
