@@ -188,13 +188,9 @@ p {
 /* Rodapé */
 
 footer{
-    display: block;
+    display: flex;
     background-color: var(--cor2);
     padding: 8px;
     margin: auto;
-    
-}
-
-.footer{
-    text-align: center;
+    justify-content: center;
 }
