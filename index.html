@@ -33,7 +33,11 @@
             <div class="fundoFoto">
                 <div class="foto">
                     <!-- <p>ahvibdigadiabvia</p> -->
-                    <img src="imagens/wallpaper003.jpg" alt="minha foto" class="minhaFoto">
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="imagens/foto-p.jpg" type="image/jpg">
+                        <source media="(max-width: 800px)" srcset="imagens/foto-m.jpg" type="image/jpg">
+                        <img src="imagens/foto-g.jpg" alt="imagem flexível">
+                    </picture>
                 </div>
             </div>
             
